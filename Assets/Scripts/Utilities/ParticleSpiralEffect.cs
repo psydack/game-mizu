@@ -318,7 +318,7 @@ public class ParticleSpiralEffect : MonoBehaviour
 		foreach (ParticleEmitter emitter in emitters) {
 			Debug.Log("resetEffect killing: " + emitter.name);
 			// Make sure autodestruct is on.
-			ParticleAnimator animator = emitter.transform.GetComponent<ParticleAnimator>();
+			ParticlAnimator animator = emitter.transform.GetComponent<ParticleAnimator>();
 			if (animator != null)
 				animator.autodestruct = true;
 			// Now loop thru the particles and set their energies to a small number.  The effect will

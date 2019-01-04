@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LoadLogo : MonoBehaviour {
@@ -10,6 +11,6 @@ public class LoadLogo : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LoadL () {
-		Application.LoadLevel("PreloadLogo");
+		SceneManager.LoadScene("PreloadLogo");
 	}
 }

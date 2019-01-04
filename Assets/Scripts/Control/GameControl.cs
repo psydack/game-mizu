@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour {
 	
@@ -42,6 +43,6 @@ public class GameControl : MonoBehaviour {
 			PlayerPrefs.SetFloat( "Score", score);
 		}
 		
-		Application.LoadLevel("EndGame");
+		SceneManager.LoadScene("EndGame");
 	}
 }

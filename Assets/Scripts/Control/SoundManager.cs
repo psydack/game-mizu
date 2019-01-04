@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class SoundManager : MonoBehaviour {
@@ -22,7 +23,7 @@ public class SoundManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if( Application.loadedLevelName == "EndGame" )
+		if( SceneManager.GetActiveScene().name == "EndGame" )
 		{
 			GetComponent<AudioSource>().volume = .5f;
 		}

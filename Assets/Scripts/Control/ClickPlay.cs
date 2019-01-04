@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class ClickPlay : MonoBehaviour {
@@ -16,7 +17,7 @@ public class ClickPlay : MonoBehaviour {
 		Vector2 vPos = Camera.main.ScreenToWorldPoint(position);
 		if( Physics2D.Raycast( vPos, Vector2.up ) )
 		{
-			Application.LoadLevel("MizuGame");
+			SceneManager.LoadScene("MizuGame");
 		}
 		
 	}

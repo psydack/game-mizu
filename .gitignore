@@ -31,3 +31,5 @@ obj/
 .Trashes
 Thumbs.db
 Thumbs.db.meta
+.vs
+.vscode
